@@ -15,10 +15,6 @@ export default class App extends Component {
     navigator.geolocation.getCurrentPosition(
       position => {
         this._getWeather(position.coords.latitude, position.coords.longitude)
-        // this.setState({
-        //   isLoaded: true
-        //   //error: "something sent wrong"
-        // });
       },
       error => {
         this.setState({
